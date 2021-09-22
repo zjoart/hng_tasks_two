@@ -21,10 +21,7 @@ class CustomField extends StatelessWidget {
       children: [
         Text(
           head,
-          style: nstyle.copyWith(
-            fontSize: 17,
-            fontWeight: FontWeight.w600
-          ),
+          style: nstyle.copyWith(fontSize: 17, fontWeight: FontWeight.w600),
         ),
         SizedBox(height: 15),
         TextFormField(
@@ -39,6 +36,8 @@ class CustomField extends StatelessWidget {
           autofocus: false,
           decoration: InputDecoration(
               labelText: hint,
+              filled: true,
+              fillColor: Colors.white,
               contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(8.0),
